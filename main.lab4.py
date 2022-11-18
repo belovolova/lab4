@@ -5,6 +5,7 @@ from threading import Thread
 import time
 
 
+# 1 вариант
 def task(A):
     letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
                'V',
@@ -21,7 +22,8 @@ def clicked():
     lbl.result2.configure(text=task(A=0))
     lbl.result3.configure(text=task(A=0))
 
-#анимация
+
+# анимация
 def flashing():
     while True:
         btn.config(bg='mediumvioletred')
@@ -34,6 +36,7 @@ def flashing():
         time.sleep(0.1)
 
 
+# интерфейс
 window = tk.Tk()
 window.geometry('1280x590')
 bg = tk.PhotoImage(file='hello1.png')
